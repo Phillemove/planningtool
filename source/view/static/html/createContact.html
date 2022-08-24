@@ -1,0 +1,67 @@
+<!-- Form for creating new Contact -->
+<div class="container rounded mx-auto bg-light shadow">
+    <div class="row">
+        <div class="col">
+            <div class="p-1 h6 text-sm-center text-secondary mx-auto display-inline-block">
+                <u>Neuer Kontakt</u>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <label class="text-secondary my-2 p-0 px-1">Nachname: </label>
+                </div>
+                <div class="col">
+                    <input class="my-2 px-10 contact-familyname-input" type="text" placeholder="Nachname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="text-secondary my-2 p-0 px-1">Vorname: </label>
+                </div>
+                <div class="col">
+                    <input class="my-2 px-10 contact-surname-input" type="text" placeholder="Vorname">
+                </div>      
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="text-secondary my-2 p-0 px-1">Email: </label>
+                </div>
+                <div class="col">
+                    <input class="my-2 px-10 contact-email-input" type="text" placeholder="Email">
+                </div>        
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="text-secondary my-2 p-0 px-1">Addresse: </label>
+                </div>
+                <div class="col">
+                    <input class="my-2 px-10 contact-street-input" type="text" placeholder="Straße">
+                    <input class="my-2 px-10 contact-housenumber-input" type="text" placeholder="Hausnummer">
+                    <br>
+                    <input class="my-2 px-10 contact-zip-input" type="number" placeholder="PLZ">
+                    <input class="my-2 px-10 contact-location-input" type="text" placeholder="Ort">
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="text-secondary my-2 p-0 px-1">Dateien: </label>
+                </div>
+                <div class="col">
+                    <select multiple="true" size="3" id="contactfile-chooser" class="contactfile-chooser">
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col align-items-start">
+                    <button id="createcontactsubmit" type="button" class="btn btn-secondary create-contact-submit-btn fa fa-check-square" data-toggle="tooltip" data-placement="bottom" title="Speichern"></button>
+                </div>
+                <div class="col align-items-start">
+                    <button id="createcontactcancel" type="button" class="btn btn-secondary create-contact-cancel-btn fa fa-window-close" data-toggle="tooltip" data-placement="bottom" title="Abbrechen"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

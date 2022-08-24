@@ -1,0 +1,26 @@
+body{
+    background-color: lightgrey;
+}
+
+#content{
+    margin-top: 2em;
+    text-align: center;
+    
+}
+
+.nav-item{
+    padding-right: 2em;
+}
+
+.form-inline{
+    margin-left: 115em;
+}
+
+.active{
+    color: cadetblue;
+}
+
+#contactlist li:hover {
+    color: cadetblue;
+}
+

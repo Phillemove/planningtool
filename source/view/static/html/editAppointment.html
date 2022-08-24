@@ -1,0 +1,65 @@
+<div class="container rounded mx-auto bg-light shadow">
+    <div class="row">
+        <div class="col">
+            <input type="hidden" id="uuid" value="" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="text-secondary my-2 p-0 px-1">Start Datum/Zeit:</label>
+        </div>
+        <div class="col">
+            <input class="my-2 px-10" type="datetime-local" id="from" value="" required />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="text-secondary my-2 p-0 px-1">End Datum/Zeit:</label>
+        </div>
+        <div class="col">
+            <input class="my-2 px-10" type="datetime-local" id="to" value="" required />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="text-secondary my-2 p-0 px-1">Titel:</label>
+        </div>
+        <div class="col">
+            <input class="my-2 px-10" type="text" id="name" value="" required />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="text-secondary my-2 p-0 px-1">Beschreibung:</label>
+        </div>
+        <div class="col">
+            <input class="my-2 px-10" type="text" id="description" value="" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="text-secondary my-2 p-0 px-1">Teilnehmer:</label>
+        </div>
+        <div class="col">
+            <select id="participants" multiple="true" size="5"></select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="text-secondary my-2 p-0 px-1">Dateianhänge:</label>
+        </div>
+        <div class="col">
+            <select id="files" multiple="true" size="5"></select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col align-items-start">
+            <button id="appointmentSave" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+                title="Speichern">Speichern</button>
+        </div>
+        <div class="col align-items-start">
+            <button id="appointmentCancel" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+                title="Abbrechen">Abbrechen</button>
+        </div>
+    </div>
+</div>

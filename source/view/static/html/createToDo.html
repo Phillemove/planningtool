@@ -1,0 +1,69 @@
+<div class="container m-5 p-2 rounded mx-auto bg-light shadow">
+    <!-- App title section -->
+    <div class="row m-1 p-4">
+        <div class="col">
+            <div class="p-1 h1 text-primary text-center mx-auto display-inline-block">
+                <i class="fa fa-check bg-primary text-white rounded p-2"></i>
+                <u>My Todo-s</u>
+            </div>
+        </div>
+    </div>
+    <!-- Create todo section -->
+    <div class="row m-1 p-3">
+        <div class="col col-11 mx-auto">
+            <div class="row bg-white rounded shadow-sm p-2 add-todo-wrapper align-items-center justify-content-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control form-control-lg border-0 add-todo-input bg-transparent rounded todo-title-input" type="text" placeholder="Title...">
+                        </div>
+                        <div class="col">
+                            <input class="form-control form-control-lg border-0 add-todo-input bg-transparent rounded todo-description-input" type="text" placeholder="Description...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto px-0 mx-0 mr-2">
+                    <button type="button" class="btn btn-primary todo-add-date-btn fa fa-calendar-alt"></button>
+                </div>
+                <div class="d-none col-auto m-0 px-2 align-items-center div-date-picker">
+                    <label class="text-secondary my-2 p-0 px-1">Fällig am</label>
+                    <input class="col my-2 px-10 todo-date-input" type="date">
+                </div>
+                <div class="col-auto px-0 mx-0 mr-2">
+                    <button type="button" class="btn btn-primary todo-add-time-btn fa fa-clock-o"></button>
+                </div>
+                <div class="d-none col-auto m-0 px-2 align-item-center div-time-picker">
+                    <input class="col my-2 px-10 todo-time-input" type="time">
+                </div>
+                <div class="col-auto px-0 mx-0 mr-2">
+                    <button type="button" class="btn btn-primary todo-add-participants-btn fa fa-user"></button>
+                </div>
+                <div class="col-auto d-none div-participants-selecter">
+                    <label for="participant-chooser">Teilnehmer:</label>
+                    <select multiple="true" size="3" id="participant-chooser" class="participant-chooser">
+                    </select>
+                </div>
+                <div class="col-auto px-0 mx-0 mr-2">
+                    <button type="button" class="btn btn-primary todo-add-files-btn fa fa-file"></button>
+                </div>
+                <div class="col-auto d-none div-files-selecter">
+                    <label for="file-chooser">Dateien:</label>
+                    <select multiple="true" size="3" id="file-chooser" class="file-choosers">
+                    </select>
+                </div>
+                <div class="col-auto px-0 mx-0 mr-2">
+                    <button type="button" class="btn btn-primary todo-add-btn fa fa-check"> add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-2 mx-4 border-black-25 border-bottom"></div>
+    <!--Show ToDo Section -->
+    <div class="row mx-1 px-5 pb-3 w-80">
+        <div class="col mx-auto" id="todo-container">
+            <div id="unchecked"></div>
+            <div id="checked"></div>
+        </div>
+
+    </div>
+</div>

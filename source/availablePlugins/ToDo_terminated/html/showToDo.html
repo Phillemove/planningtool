@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <div class="row">
+        <div class="col-1">
+          <h2 class="m-0 p-0">
+            <i class="fa fa-square-o text-primary btn m-0 p-0 todo-unchecked-btn d-none" data-toggle="tooltip" data-placement="bottom" title="Mark as complete"></i>
+            <i class="fa fa-check-square-o text-primary btn m-0 p-0 todo-checked-btn" data-toggle="tooltip" data-placement="bottom" title="Mark as todo"></i>
+          </h2>
+        </div>
+        <div class="col title-div">
+          <h3 class="todo-title">Titel</h3>
+          <input class="form-control form-control-lg border-0 add-todo-input bg-transparent rounded todo-title-input d-none" type="text" placeholder="Title..." />
+          <p class="todo-description">Beschreibung</p>
+          <input class="form-control form-control-lg border-0 add-todo-input bg-transparent rounded todo-description-input d-none" type="text" placeholder="Description..." />
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="col-3 todo-participant-div">
+      <ul style="list-style-type:none" class="todo-participants">
+        <li>Keine Teilnehmer</li>
+      </ul>
+    </div>
+
+    <div class="col-3 todo-file-div">
+      <ul style="list-style-type:none" class="todo-files">
+        <li>Keine Dateien</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <div class="row">
+        <h5 class="m-0 p-0 px-2">
+          <i class="fa fa-trash-o text-danger btn m-0 p-0 delete-Btn" data-toggle="tooltip" data-placement="bottom" title="Delete todo"></i>
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-md-center due">
+    <p class="todo-dueDate">31.02.2022 15:30Uhr</p>
+    <input type="date" class="todo-input-picker-date d-none" >
+    <input type="time" class="todo-input-picker-time d-none" >
+  </div>
+</div>
